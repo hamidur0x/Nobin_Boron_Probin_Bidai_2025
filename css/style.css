@@ -12,7 +12,7 @@ body {
 }
 
 .main-photo {
-  background: url('../assets/1.jpg') no-repeat center center;
+  background: url('/image/1.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -95,7 +95,7 @@ h1 {
 }
 
 .photos {
-  background: url('./assets/2.avif') no-repeat center center;
+  background: url('/image/2.avif') no-repeat center center;
   background-size: cover;
   height: 100vh;
   position: relative;
