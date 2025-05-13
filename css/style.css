@@ -95,7 +95,7 @@ h1 {
 }
 
 .photos {
-  background: url('/image/2.avif') no-repeat center center;
+  background: url('/image/2.jpg') no-repeat center center;
   background-size: cover;
   height: 100vh;
   position: relative;
