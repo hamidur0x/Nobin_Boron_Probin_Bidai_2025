@@ -181,10 +181,14 @@ h1 {
   }
 
   .highlight-text-left,
-  .highlight-text-right {
-    max-width: 100%;
-    text-align: center;
-  }
+.highlight-text-right {
+  max-width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
 
   .photos {
     padding: 1.5rem;
