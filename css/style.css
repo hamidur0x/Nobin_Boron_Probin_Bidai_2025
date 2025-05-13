@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(45deg, #000000, #1e2a47);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.main-photo {
+  background: url('../assets/event_image.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.overlay h2{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.overlay h3{
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#countdown {
+  font-size: 1.9rem;
+  color: yellow;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.event-highlights {
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: -5vh;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.event-highlights h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+}
+
+.highlight-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.highlight-text-left,
+.highlight-text-right {
+  flex: 1;
+  max-width: 45%;
+}
+
+.highlight-text-left ul,
+.highlight-text-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlight-text-left li,
+.highlight-text-right li {
+  margin: 15px 0;
+  font-size: 1.6rem;
+}
+
+.photos {
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
+  gap: 2rem;
+}
+
+.photo {
+  text-align: center;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+  border: 4px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+.photo p {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-photo {
+    height: 60vh;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #countdown {
+    font-size: 1.4rem;
+  }
+
+  .event-highlights {
+    padding: 2rem;
+  }
+
+  .highlight-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .highlight-text-left,
+  .highlight-text-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .photos {
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+
+  .photo img {
+    width: 100%;
+  }
+}
